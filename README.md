@@ -1,4 +1,4 @@
-## En este proyecto se aplicara TDD (Test-Driven Development)
+# En este proyecto se aplicara TDD (Test-Driven Development)
 
 Lo que significa que primero se escribirán las pruebas unitarias de los modelos, después se escribirá  el código necesario para que las pruebas pasen satisfactoriamente y, por último,  se refactorizara  el código escrito.
 
