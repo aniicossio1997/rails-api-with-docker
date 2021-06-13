@@ -27,10 +27,10 @@ RSpec.describe User, type: :model do
       should validate_numericality_of(:age).only_integer
     end
     it 'validar si la edad es mayor o igual a 18' do
-      should validate_numericality_of(:age).is_greater_thant_or_equal_to(18)
+      should validate_numericality_of(:age).is_greater_than_or_equal_to(18)
     end
     it 'validar si la edad es menor o igual a 100' do
-      should validate_numericality_of(:age).is_less_thant_or_equal_to(100)
+      should validate_numericality_of(:age).is_less_than_or_equal_to(100)
     end
     
   end
