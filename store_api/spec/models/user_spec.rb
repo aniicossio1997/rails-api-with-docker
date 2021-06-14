@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
   # pending "add some examples to (or delete) #{__FILE__}"
   describe 'Validaciones del modelo user' do
     #con build va crear una instancia del modelo user
-    subject { build(:user) }
+    subject { build(:owner) }
     it 'validar si el email esta presente' do
       should validate_presence_of(:email)
     end
@@ -31,6 +31,9 @@ RSpec.describe User, type: :model do
     end
     it 'validar si la edad es menor o igual a 100' do
       should validate_numericality_of(:age).is_less_than_or_equal_to(100)
+    end
+    it 'Validar si solo se pueden crear empleados o propietarios' do
+      should validate_inclusion_of(:type).in_array(%w[Employee Owner])
     end
     
   end
