@@ -461,3 +461,110 @@ FOREIGN KEY ("user_id")
   [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mToken Load (1.7ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
   [1m[36mToken Load (1.2ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (2.7ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Zelda II: Adventure of Link"], ["created_at", "2021-06-15 23:01:39.460156"], ["updated_at", "2021-06-15 23:01:39.460156"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "A Link to the Past"], ["created_at", "2021-06-15 23:01:39.519774"], ["updated_at", "2021-06-15 23:01:39.519774"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (2.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Wind Waker"], ["created_at", "2021-06-15 23:01:39.530305"], ["updated_at", "2021-06-15 23:01:39.530305"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.6ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Four Swords"], ["created_at", "2021-06-15 23:01:39.543590"], ["updated_at", "2021-06-15 23:01:39.543590"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.7ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ocarina of Time"], ["created_at", "2021-06-15 23:01:39.553331"], ["updated_at", "2021-06-15 23:01:39.553331"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.9ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ocarina of Time"], ["created_at", "2021-06-15 23:01:39.564463"], ["updated_at", "2021-06-15 23:01:39.564463"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.8ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Four Swords"], ["created_at", "2021-06-15 23:01:39.573041"], ["updated_at", "2021-06-15 23:01:39.573041"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ocarina of Time"], ["created_at", "2021-06-15 23:01:39.581765"], ["updated_at", "2021-06-15 23:01:39.581765"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.9ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Minish Cap"], ["created_at", "2021-06-15 23:01:39.589682"], ["updated_at", "2021-06-15 23:01:39.589682"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.9ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Four Swords"], ["created_at", "2021-06-15 23:01:39.600116"], ["updated_at", "2021-06-15 23:01:39.600116"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Four Swords"], ["created_at", "2021-06-15 23:01:53.680412"], ["updated_at", "2021-06-15 23:01:53.680412"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Wind Waker"], ["created_at", "2021-06-15 23:01:53.688883"], ["updated_at", "2021-06-15 23:01:53.688883"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Majora's Mask"], ["created_at", "2021-06-15 23:01:53.699639"], ["updated_at", "2021-06-15 23:01:53.699639"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.8ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Minish Cap"], ["created_at", "2021-06-15 23:01:53.709938"], ["updated_at", "2021-06-15 23:01:53.709938"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.3ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "A Link to the Past"], ["created_at", "2021-06-15 23:01:53.719877"], ["updated_at", "2021-06-15 23:01:53.719877"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.1ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Twilight Princess"], ["created_at", "2021-06-15 23:01:53.729166"], ["updated_at", "2021-06-15 23:01:53.729166"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.9ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Oracle of Seasons - Oracle of Ages"], ["created_at", "2021-06-15 23:01:53.738707"], ["updated_at", "2021-06-15 23:01:53.738707"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ocarina of Time"], ["created_at", "2021-06-15 23:01:53.747298"], ["updated_at", "2021-06-15 23:01:53.747298"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.4ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Majora's Mask"], ["created_at", "2021-06-15 23:01:53.756224"], ["updated_at", "2021-06-15 23:01:53.756224"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Legend of Zelda"], ["created_at", "2021-06-15 23:01:53.767744"], ["updated_at", "2021-06-15 23:01:53.767744"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.0ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "A Link to the Past"], ["created_at", "2021-06-15 23:02:03.174883"], ["updated_at", "2021-06-15 23:02:03.174883"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.9ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ocarina of Time"], ["created_at", "2021-06-15 23:02:03.184574"], ["updated_at", "2021-06-15 23:02:03.184574"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Link's Awakening"], ["created_at", "2021-06-15 23:02:03.194631"], ["updated_at", "2021-06-15 23:02:03.194631"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.1ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Breath of the Wild"], ["created_at", "2021-06-15 23:02:26.179559"], ["updated_at", "2021-06-15 23:02:26.179559"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.9ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Majora's Mask"], ["created_at", "2021-06-15 23:02:26.187269"], ["updated_at", "2021-06-15 23:02:26.187269"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.1ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Phantom Hourglass"], ["created_at", "2021-06-15 23:02:29.326703"], ["updated_at", "2021-06-15 23:02:29.326703"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.7ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Oracle of Seasons - Oracle of Ages"], ["created_at", "2021-06-15 23:02:29.336086"], ["updated_at", "2021-06-15 23:02:29.336086"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.7ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Wind Waker"], ["created_at", "2021-06-15 23:02:31.299743"], ["updated_at", "2021-06-15 23:02:31.299743"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.7ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Minish Cap"], ["created_at", "2021-06-15 23:02:31.306807"], ["updated_at", "2021-06-15 23:02:31.306807"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (0.8ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Majora's Mask"], ["created_at", "2021-06-15 23:02:36.624535"], ["updated_at", "2021-06-15 23:02:36.624535"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.0ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Legend of Zelda"], ["created_at", "2021-06-15 23:02:36.631351"], ["updated_at", "2021-06-15 23:02:36.631351"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7023475548412510530)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20210616071037)
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.8ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" character varying, "price" float, "store_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_5cf8ff66a6"
+FOREIGN KEY ("store_id")
+  REFERENCES "stores" ("id")
+)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE INDEX "index_products_on_store_id" ON "products" ("store_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210616071037"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(7023475548412510530)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
