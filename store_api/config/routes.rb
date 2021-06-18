@@ -5,11 +5,15 @@ Rails.application.routes.draw do
     namespace :v1, defaults: { format: 'json'} do
       resources :users, only: %i[create] do
         post 'login', on: :collection
+        #v1/users/login
         # resources :stores, only: %i[show]
       end
-
       resources :stores, only: %i[show]
+      resources :products, only: %i[create update index destroy] do 
 
+        post 'restore'
+        #v1/products/:products_id/restore
+      end
     end
   end
 

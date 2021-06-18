@@ -1,6 +1,6 @@
 module V1
   class StoresController < ApplicationController
-    before_action :authenticate_use!
+    before_action :authenticate_user!
     before_action :set_store
     def show;end
     private

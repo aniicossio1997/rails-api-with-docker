@@ -4,7 +4,7 @@ class ApplicationController < ActionController::API
   def switch_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
-  def authenticate_use!
+  def authenticate_user!
     token_request = search_token_request(request.headers)
     if token_request
       token = Token.find_by(token: token_request)

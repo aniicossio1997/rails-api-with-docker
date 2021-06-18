@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :product do
-    name { "MyString" }
-    description { "MyString" }
-    price { 1.5 }
-    store { nil }
+    name { Faker::Book.title }
+    description { Faker::Lorem.sentence(word_count:50) }
+    price { rand(1..1000) }
+    store
   end
 end

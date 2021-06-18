@@ -568,3 +568,50 @@ FOREIGN KEY ("store_id")
   [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(7023475548412510530)[0m
   [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.8ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Oracle of Seasons - Oracle of Ages"], ["created_at", "2021-06-16 07:42:05.594669"], ["updated_at", "2021-06-16 07:42:05.594669"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (3.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "store_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "The Way Through the Woods"], ["description", "Nulla ab quos labore et asperiores omnis repellendus aperiam blanditiis dolores dolorem explicabo dolore numquam aut minus omnis voluptas veniam et quia accusamus vel et voluptatem earum sint ratione non modi in quasi omnis illo ipsa quod qui voluptates reiciendis quidem expedita maxime reprehenderit a animi est nihil architecto consequatur."], ["price", 274.0], ["store_id", 32], ["created_at", "2021-06-16 07:42:05.611979"], ["updated_at", "2021-06-16 07:42:05.611979"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.0ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Minish Cap"], ["created_at", "2021-06-16 07:42:15.967019"], ["updated_at", "2021-06-16 07:42:15.967019"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "store_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ah, Wilderness!"], ["description", "Exercitationem ut optio et quidem voluptate et mollitia aut nisi molestiae doloribus consequatur eaque qui tenetur blanditiis nihil et quas laborum ut sit voluptas non error doloremque nesciunt similique maiores id consequuntur quo sunt harum consectetur nostrum voluptatem placeat qui facere aut saepe et quae ducimus totam officiis et aut."], ["price", 11.0], ["store_id", 33], ["created_at", "2021-06-16 07:42:15.973888"], ["updated_at", "2021-06-16 07:42:15.973888"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.6ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Breath of the Wild"], ["created_at", "2021-06-16 23:25:55.560459"], ["updated_at", "2021-06-16 23:25:55.560459"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (1.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "store_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "This Side of Paradise"], ["description", "Mollitia repellat ullam eligendi qui velit nam ipsam et consequatur qui in hic occaecati odio et nobis optio natus accusamus vitae modi aut velit eum nesciunt inventore quas molestias sapiente architecto neque consequuntur aspernatur laudantium tempore voluptates quos dolores quia consequatur quod beatae esse accusantium repudiandae delectus aut nihil nulla."], ["price", 215.0], ["store_id", 34], ["created_at", "2021-06-16 23:25:55.576136"], ["updated_at", "2021-06-16 23:25:55.576136"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (1.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Minish Cap"], ["created_at", "2021-06-16 23:27:06.797597"], ["updated_at", "2021-06-16 23:27:06.797597"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOwner Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."type" = $1 AND "users"."store_id" = $2 LIMIT $3[0m  [["type", "Owner"], ["store_id", 35], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7023475548412510530)[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDeletedAtToProducts (20210618090402)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.3ms)[0m  [1m[35mALTER TABLE "products" ADD "deleted_at" timestamp[0m
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE INDEX "index_products_on_deleted_at" ON "products" ("deleted_at")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210618090402"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(7023475548412510530)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStore Create (5.8ms)[0m  [1m[32mINSERT INTO "stores" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Twilight Princess"], ["created_at", "2021-06-18 09:08:05.751808"], ["updated_at", "2021-06-18 09:08:05.751808"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (2.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "store_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "The Far-Distant Oxus"], ["description", "Perspiciatis perferendis rem minima voluptate mollitia similique animi enim ut doloribus quasi unde placeat error sit omnis numquam praesentium odio dolore corrupti optio ea omnis quod consequatur non sint velit voluptatem in accusantium est laboriosam fuga harum blanditiis ullam consequuntur voluptas aut quia et eaque delectus dolores dolorum laudantium illum."], ["price", 444.0], ["store_id", 36], ["created_at", "2021-06-18 09:08:05.768565"], ["updated_at", "2021-06-18 09:08:05.768565"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "deleted_at" = $1, "updated_at" = $2 WHERE "products"."id" = $3[0m  [["deleted_at", "2021-06-18 09:08:51.931886"], ["updated_at", "2021-06-18 09:08:51.931936"], ["id", 4]]
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."deleted_at" IS NULL AND "products"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."deleted_at" IS NULL[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."deleted_at" IS NOT NULL AND "products"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Update (0.9ms)[0m  [1m[33mUPDATE "products" SET "deleted_at" = $1, "updated_at" = $2 WHERE "products"."id" = $3[0m  [["deleted_at", nil], ["updated_at", "2021-06-18 09:09:52.300740"], ["id", 4]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."deleted_at" IS NULL[0m
