@@ -32,6 +32,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
   gem 'faker', '~> 2.16'
   gem 'factory_bot_rails', '~> 6.1'
+  gem 'hirb'
 end
 
 group :test do
